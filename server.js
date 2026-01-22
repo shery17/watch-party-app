@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Serve static frontend files
 app.use(express.static('public'));
@@ -49,6 +49,6 @@ io.on('connection', (socket) => {
 });
 
 // Start server
-server.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+server.listen(port, "0.0.0.0", () => {
+  console.log(`Server running on port ${port}`);
 });
