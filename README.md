@@ -1,5 +1,6 @@
 # watch-party-app
 A minimal-setup web application for synchronised group video watching using local video playback and WebSockets.
+Live link: https://watch-party-app-vjue.onrender.com
 
 ## Instructions to install/run
 Ngrok is used to share a public, secure url of localhost to the other users.
